@@ -25,7 +25,7 @@ const Card = (props) => {
               className="video-player"
               playing
               height="250px"
-              width="360px"
+              width="100%"
               pip
               controls="false"
               muted
