@@ -9,12 +9,14 @@ import Blog from "./component/Blog/Blog"
 import Contact from "./component/Contact/Contact"
 import Footer from "./component/Footer"
 import "./App.css"
+import TechStack from "./component/Tech/TechStack"
 
 const App = () => {
   return (
     <>
       <Header />
       <Home />
+      <TechStack/>
       <Features />
       <Portfolio />
       <Resume />

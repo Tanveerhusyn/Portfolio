@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
 html {
   scroll-behavior: smooth;
@@ -53,9 +54,10 @@ button {
 .btn_shadow {
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
   box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  color:black;
 }
 .btn_shadow:hover {
-  background: #ff014f;
+  background: #0066ff;
   color: white;
   transform: translateY(-10px);
 }
@@ -67,10 +69,10 @@ button {
 .row,
 .left,
 .right {
-  width: 50%;
+  width: 100%;
 }
 .top {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 .mtop {
   margin-top: 40px;
@@ -79,7 +81,7 @@ button {
   margin: 50px 0 50px 0;
 }
 .heading h4 {
-  color: #ff014f;
+  color: #0066ff;
   letter-spacing: 2px;
   font-weight: 400;
 }
@@ -102,7 +104,7 @@ p {
   text-align: center;
 }
 .primary_color {
-  color: #ff014f;
+  color: #0066ff;
 }
 textarea,
 input {

@@ -52,7 +52,7 @@ const Card = (props) => {
             </a>
            
             <a href={props.url} target="_blank" className='btn_shadow '>
-              <YouTube style={{marginRight:'20px'}}/> Youtube
+              <YouTube style={{marginRight:'20px',color:'red'}}/> Youtube
             </a>
            
           </div>

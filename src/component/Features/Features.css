@@ -1,5 +1,10 @@
 .features .box {
   padding: 50px;
+  
+}
+.features{
+  margin-top: 10%;
+  margin-left: 25px;
 }
 .features .box h2 {
   margin: 20px 0 20px 0;
@@ -21,3 +26,27 @@
   color: white;
   opacity: 1;
 }
+.btn_shadow_new {
+  padding: 18px 25px;
+  border-radius: 6px;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  color: #000;
+  transition: 0.5s;
+}
+.btn_shadow_new {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  color:black;
+  
+}
+.btn_shadow_new:hover {
+
+  transform: translateY(-10px);
+}
+.box_shodow_new {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  border-radius: 10px;
+}
+

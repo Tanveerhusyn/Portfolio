@@ -1,9 +1,10 @@
 header {
   height: 10vh;
   line-height: 10vh;
+  margin-top: 5px;
 }
 header .container {
-  padding-top: 15px;
+ 
 }
 header ul li {
   margin-left: 30px;
@@ -15,7 +16,7 @@ header ul li a {
   letter-spacing: 1px;
 }
 header ul li a:hover {
-  color: #ff014f;
+  color: #0066ff;
 }
 .home-btn {
   padding: 18px 25px;
@@ -23,17 +24,17 @@ header ul li a:hover {
   transition: 0.3s all ease;
   cursor: pointer;
   height: fit-content;
-  color: #ff014f;
+  color: #0066ff;
 }
 .home-btn {
-  background: #ff014f;
+  background: #0066ff;
   color: white;
   box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
   height: 45px;
   text-align: center;
 }
 .home-btn:hover {
-  background: #ff014f;
+  background: #0066ff;
   color: white;
 }
 .open {
@@ -48,7 +49,7 @@ header ul li a:hover {
   background-color: #ecf0f3;
   /* box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75); */
   /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  /* box-shadow: rgba(241, 242, 243, 0.3) 0px 1px 2px 0px, rgba(245, 245, 245, 0.15) 0px 1px 3px 1px; */
   transition: 0.5s;
 }
 @media (max-width: 768px) {
@@ -82,7 +83,7 @@ header ul li a:hover {
     position: absolute;
     top: 35px;
     right: 20px;
-    color: #ff014f;
+    color: #0066ff;
     display: block;
     font-size: 25px;
     z-index: 999;
@@ -92,7 +93,7 @@ header ul li a:hover {
   }
   .close.home-btn {
     background: linear-gradient(145deg, #e2e8ec, #ffffff);
-    color: #ff014f;
+    color: #0066ff;
     border-radius: 50%;
     padding: 0;
     width: 60px;

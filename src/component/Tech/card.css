@@ -1,0 +1,15 @@
+.card_new{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+   
+    .card_new > h2{
+        display: none;
+    }
+    
+  }

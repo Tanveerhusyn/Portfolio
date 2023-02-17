@@ -2,40 +2,31 @@ import React from "react"
 import "./Portfolio.css"
 import Card from "./Card"
 import Portfolio_data from "./Portfolio_data"
+import Grid from '@mui/material/Grid';
 
 const Portfolio = () => {
   return (
     <>
       <section className='Portfolio top' id='portfolio'>
-        <div className='container'>
+        <div className='container_new'>
           <div className='heading text-center '>
             <h4>Have a Look at my Portfolio</h4>
             <h1>My Portfolio</h1>
           </div>
+          <Grid container spacing={2}>
+       
+     
+        {Portfolio_data.map((value, index) => {
+              return (
+                <Grid item xs={12} md={4}>
+                               <Card key={index} githubUrl={value.githubUrl} image={value.image} url={value.url} category={value.category} totalLike={value.totalLike} title={value.title} />
 
-          <div className='content grid'>
-            {Portfolio_data.map((value, index) => {
-              return <Card key={index} githubUrl={value.githubUrl} image={value.image} url={value.url} category={value.category} totalLike={value.totalLike} title={value.title} />
+              </Grid>
+              )
             })}
-
-            {/*<div className='box btn_shadow '>
-              <div className='img'>
-                  <img src='https://rainbowit.net/html/inbio/assets/images/portfolio/portfolio-01.jpg' alt='' />
-              </div>
-              <div className='category d_flex'>
-                  <span>Development</span>
-                  <label>
-                    <i className='far fa-heart'></i> 360
-                  </label>
-              </div>
-              <div className='title'>
-                  <h2>Mobile app landing design & Services</h2>
-                <a href='' className='arrow'>
-                  <i class='fas fa-arrow-right'></i>
-                </a>
-              </div>
-            </div>*/}
-          </div>
+        
+      </Grid>
+      
         </div>
       </section>
     </>
