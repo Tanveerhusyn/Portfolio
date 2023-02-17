@@ -25,8 +25,8 @@ const Home = () => {
             src={main}
           />
         </div>
-        <Grid container columnSpacing={{ xs: 1, sm: 2, md: 12 }}>
-          <Grid item xs={12} sx={{ pt: 0 }} md={7} lg={8}>
+        <Grid container columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+          <Grid item xs={12} sx={{ pt: 0 }} md={6} lg={8}>
             <div className="left top">
               <h3>Hello World</h3>
               <h1>
@@ -47,7 +47,7 @@ const Home = () => {
                 </span>
               </h2>
 
-              <p style={{ width: "90%" }}>
+              <p style={{ width: "80%" }}>
                 As a freelance MERN stack developer with 1.5 years of
                 experience, my primary focus is on ReactJS, ExpressJS, NodeJS,
                 and MongoDB. I am comfortable with adapting to new technologies
