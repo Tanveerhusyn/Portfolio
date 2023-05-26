@@ -33,18 +33,19 @@ const Home = () => {
                 Hi, I’m <span>Tanveer Hussain</span>
               </h1>
               <h2>
-                a
-                <span>
+                {"<"}
+                <span style={{fontSize:'30px'}}>
                   <Typewriter
-                    words={[" Software Engineer.", " MERN Developer."]}
+                    words={["A MERN Developer."]}
                     loop
                     cursor
-                    cursorStyle="|"
+                    cursorStyle="/"
                     typeSpeed={70}
                     deleteSpeed={50}
                     delaySpeed={1000}
                   />
                 </span>
+                {">"}
               </h2>
 
               <p style={{ width: "80%" }}>

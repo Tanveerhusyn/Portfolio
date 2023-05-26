@@ -3,10 +3,29 @@ import "./Testimonial.css"
 import Slide from "./Slide"
 import TestimonialApi from "./TestimonialApi"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-
+import ReviewCard from "./ReviewCard"
+import review1 from '../pic/review1.jpg'
+import review2 from '../pic/review2.jpg'
+import review3 from '../pic/review3.jpg'
+import review4 from '../pic/review4.jpg'
+import review5 from '../pic/review5.jpg'
+import Slider from 'react-slick'
 const Testimonial = () => {
-  const [data, setdata] = useState(TestimonialApi)
+  const data = [
+    review1,review2,review3,review4,review5
+  ]
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 4000,
+    cssEase: "linear",
+   
+  };
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
@@ -34,23 +53,20 @@ const Testimonial = () => {
             <h4>WHAT CLIENTS SAY</h4>
             <h1>Testimonial</h1>
           </div>
-          <div className='slide'>
+          <div style={{marginLeft:'40px'}}>
             {/*{TestimonialApi.map((val, index) => {
               return <Slide key={index} image={val.image} design={val.design} name={val.name} offcer={val.offcer} post={val.post} date={val.date} desc={val.desc} />
             })}*/}
-
-            {data.map((value, valueIndex) => {
-              return <Slide key={value.id} {...value} valueIndex={valueIndex} index={index} />
-            })}
-
-            <div className='slide_button'>
-              <button className='btn_shadow prev_btn' onClick={() => setIndex(index - 1)}>
-                <i class='fas fa-arrow-left'></i>
-              </button>
-              <button className='btn_shadow next_btn' onClick={() => setIndex(index + 1)}>
-                <i class='fas fa-arrow-right'></i>
-              </button>
-            </div>
+           
+          <Slider {...settings}>
+        
+          <ReviewCard key={index} image={review1} title=""/>
+          <ReviewCard key={index} image={review2} title=""/>
+          <ReviewCard key={index} image={review3} title=""/>
+          <ReviewCard key={index} image={review4} title=""/>
+          <ReviewCard key={index} image={review5} title=""/>
+           
+        </Slider>
           </div>
         </div>
       </section>

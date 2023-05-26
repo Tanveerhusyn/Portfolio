@@ -37,7 +37,7 @@ const Contact = () => {
   }
   return (
     <>
-      <section className='Contact' id='contact'>
+      <section className='Contact' style={{marginBottom:'80px'}} id='contact'>
         <div className='container top'>
           <div className='heading text-center'>
             <h4>CONTACT</h4>
@@ -52,8 +52,8 @@ const Contact = () => {
                 </div>
                 <div className='details'>
                   <h1>Tanveer Hussain</h1>
-                  <p style={{display:'flex',alignItems:'center',marginRight:"10px"}}><Phone/>+923085135289</p>
-                  <p style={{display:'flex',alignItems:'center',marginRight:"10px"}}><Email/> Tanveerhussain465@gmail.com</p> <br />
+                  <p style={{display:'flex',alignItems:'center',margin:"10px"}}><Phone/>+923085135289</p>
+                  <p style={{display:'flex',alignItems:'center',margin:"10px"}}><Email/> Tanveerhussain465@gmail.com</p> <br />
                   <span>FIND WITH ON</span>
                  <div className="main-cont">
                   <div className="single-cont">

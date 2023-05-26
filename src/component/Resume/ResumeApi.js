@@ -19,7 +19,7 @@ const ResumeApi = [
   {
     id: 4,
     category: "experience",
-    year: "Upwork (2020-2022) ",
+    year: "Upwork (2020-present) ",
     title: "Freelance Web Developer ",
     desc: "After learning web development, I started my freelancing career by taking outsourced projects in the beginning. After that I made my profile on multiple freelancing platforms and now I have been working as a freelance web developer",
    },

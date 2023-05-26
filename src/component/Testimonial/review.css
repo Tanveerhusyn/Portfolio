@@ -1,0 +1,28 @@
+.card_new_review{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 200px;
+    min-height: 200px;
+    max-height: 200px;
+     
+}
+
+ 
+  
+  .card_new_review img {
+    /* Make the image fill the container */
+    width: 100%;
+    height: 100%;
+    object-fit:contain; /* Maintain aspect ratio and fill the container */
+  }
+@media (max-width: 768px) {
+   
+    .card_new_review > h2{
+        display: none;
+    }
+    
+  }

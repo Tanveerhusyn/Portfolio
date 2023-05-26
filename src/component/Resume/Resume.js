@@ -9,7 +9,7 @@ const Resume = () => {
       <section className='Resume' id='resume'>
         <div className='container top'>
           <div className='heading text-center'>
-            <h4>1.5+ YEARS OF EXPERIENCE</h4>
+            <h4>2+ YEARS OF EXPERIENCE</h4>
             <h1>My Resume</h1>
           </div>
 
@@ -17,7 +17,7 @@ const Resume = () => {
             <div className='left'>
               <div className='heading'>
              
-                <h1>Education Quality</h1>
+                <h1>Education</h1>
               </div>
 
               <div className='content'>

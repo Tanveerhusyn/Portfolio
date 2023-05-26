@@ -7,6 +7,11 @@
 .Contact .box {
   padding: 30px;
 }
+.details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .Contact .details h1 {
   margin: 20px 0 20px 0;
   font-size: 35px;
